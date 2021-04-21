@@ -1,0 +1,17 @@
+body {
+  background-color: black;
+}
+.animated-line {
+  stroke-dashoffset: 1000;
+  stroke-dasharray: 1000;
+  animation: lineAnimated 8s linear 1 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes lineAnimated {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
